@@ -12,7 +12,7 @@ body {
   font-size: 15px;
   padding: 0;
   font-family: "Open Sans", serif;
-  background-image: url("../images/pexels-roberto-shumski-1903702.jpg");
+  background-image: url("../images/cool-background.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -81,8 +81,9 @@ img {
   color: white;
   text-shadow: black 0px 0px 20px;
   text-align: center;
-  font-size: 13px;
-  margin-top: 15px;
+  font-size: 11.8px;
+  margin-top: 10px;
+  padding-bottom: 2px;
 }
 
 main {
@@ -111,7 +112,7 @@ article img {
 /* footer */
 footer {
   background-color: black;
-  color: white;
+  color: rgba(61, 160, 206, 0.815);
   position: fixed;
   text-align: center;
   left: 0px;
@@ -132,11 +133,11 @@ footer {
 
 
 /* Styling parap of journey */
-#t2016, h2 {
+h1, h2, h3, h4, h5, h6, h7 {
   text-align: center;
   color: rgba(25, 29, 255, 0.911);
   font-size: 35px;
-  padding: 5px;
+  padding: 2px;
 }
 
 #parag1, #parag2, #p12, #p16, #para19, #para22 {
@@ -145,12 +146,11 @@ footer {
   font-size: 15px;
   padding: 5px;
 }
+#img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9, #img10, #img11{
+
+}
 
 /* My journey black bground */
-.parent{
-  background-image: none !important;
-  background: linear-gradient(#373b44, #4286f4) !important;
-}
 
 /* grid */
 .grid{
@@ -319,7 +319,7 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 }  
 
   
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) and (max-width: 1024px) {
   nav {
     background-color: #b8fbe5;
     padding: 0.5rem 0;
@@ -340,6 +340,26 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     position: relative;
     top: 55px;
     
+  }
+  /* About styling */
+  .aboutme{
+    margin:auto !important;
+    color: white;
+    text-shadow: black 0px 0px 20px;
+    text-align: center;
+    margin: 23px !important;
+    padding: 5px !important;
+  }
+  /* Reference */
+  #main-ref {
+    padding-bottom: 80px !important;
+  }
+  
+  article img {
+    width: 90%;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 15px;
   }
 
 }
