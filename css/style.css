@@ -164,7 +164,7 @@ footer {
   }
 
   /* Styling parap of journey */
-h1, h2, h3, h4, h5, h6, h7 {
+h2, h3{
   text-align: center;
   color: rgba(25, 29, 255, 0.911);
   font-size: 35px;
@@ -411,7 +411,7 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   }
 
   /* Styling parap of journey */
-  h2, h6 {
+  h2, h3 {
     text-align: center;
     color: rgba(25, 29, 255, 0.911);
     font-size: 35px;
