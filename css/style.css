@@ -7,6 +7,10 @@ a {
   color: #333;
 }
 
+.skip{
+  /* display: none; */
+}
+
 body {
   margin: 0;
   font-size: 15px;
@@ -57,12 +61,17 @@ header p {
 }
 
 h1 {
+  font-size: .5px;
+  opacity: 0;
+}
+/* 
+h1 {
   font-size: 55px;
   line-height: 1;
   padding: 50px 0;
   color: rgba(25, 29, 255, 0.911);
   font-weight: bold;
-}
+} */
 
 img {
   display: block;
@@ -110,13 +119,13 @@ article img {
   border: none;
 }
 /* footer */
+
 footer {
   background-color: black;
   color: rgba(61, 160, 206, 0.815);
   position: fixed;
+  bottom: 0;
   text-align: center;
-  left: 0px;
-  bottom: 0px;
   height: 60px;
   width: 100%;
   margin: auto;
@@ -132,42 +141,41 @@ footer {
 }
 
 
-/* Styling parap of journey */
+
+/* My journey black bground */
+
+/* grid */
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1px;
+  justify-content: center;
+  grid-template-rows: auto auto auto;
+  grid-row-gap: 1px;
+
+  }
+
+.grid-container div img {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  max-width: 80%;
+  max-height: 70%;
+  padding: 0px;
+  }
+
+  /* Styling parap of journey */
 h1, h2, h3, h4, h5, h6, h7 {
   text-align: center;
   color: rgba(25, 29, 255, 0.911);
   font-size: 35px;
-  padding: 2px;
 }
 
 #parag1, #parag2, #p12, #p16, #para19, #para22 {
   text-align: center;
   color: white;
   font-size: 15px;
-  padding: 5px;
-}
-#img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9, #img10, #img11{
 
 }
-
-/* My journey black bground */
-
-/* grid */
-.grid{
-  display: grid;
-  grid-template-columns: 70%;
-  grid-column-gap: 10px;
-  justify-content: center;
-  grid-template-rows: auto auto auto;
-  grid-row-gap: 2px;
-
-  }
-
-.grid img {
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-  max-width: 100%;
-  }
 
 
   
@@ -318,10 +326,10 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     width: 100%;
 }  
 
+
   
 @media screen and (min-width: 767px) and (max-width: 1024px) {
   nav {
-    background-color: #b8fbe5;
     padding: 0.5rem 0;
   }
 
@@ -331,6 +339,7 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    width: 100%;
   }
   .jake p{
     text-align: center;
@@ -342,17 +351,22 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     
   }
   /* About styling */
-  .aboutme{
+  /* .aboutme{
     margin:auto !important;
     color: white;
     text-shadow: black 0px 0px 20px;
     text-align: center;
-    margin: 23px !important;
-    padding: 5px !important;
+    font-size: 95% !important;
+    padding-top: 25px;
+  } */
+  .aboutme{
+    height: 100vh;
+    width: 100vh;
   }
-  /* Reference */
-  #main-ref {
-    padding-bottom: 80px !important;
+
+  .aboutme p{
+    height: 100vh;
+    width: 100vh;
   }
   
   article img {
@@ -362,4 +376,101 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     margin-bottom: 15px;
   }
 
+  /* SKIP TO CONTENT */
+  /* .skip{
+    background: #e77e23;
+    height: 30px;
+    left: 50%;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+  }
+  .skip:focus {
+    transform: translateY(0%);
+  } */
+
+
+/* grid */
+  .grid-container{
+    display: grid;
+    grid-template-columns: 80%;
+    grid-column-gap: 1px;
+    justify-content: center;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 1px;
+
+  }
+
+  .grid-container img {
+   border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    max-width: 80%;
+    max-height: 70%;
+    padding: 0px;
+  }
+
+  /* Styling parap of journey */
+  h2, h6 {
+    text-align: center;
+    color: rgba(25, 29, 255, 0.911);
+    font-size: 35px;
+  }
+
+  #parag1, #parag2, #p12, #p16, #para19, #para22 {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+  }
+/* Grid images journey */
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1px;
+    justify-content: center;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 1px;
+  
+  }
+  .grid-container div img {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    width: 300px;
+    height: 300px;
+    padding: 0px;
+    }
+
+  .grid-item p{
+    margin-top: 15px;
+  }
+/* 
+  .aboutme{
+    height: 100vh;
+    width: 100vh;
+  }
+
+  .aboutme p{
+    height: 100vh;
+    width: 100vh;
+  } */
+/* contact form and flex */
+
+  .form-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .left-side{
+    flex-basis: 60%;
+  }
+
+  .right-side{
+    flex-basis: 30%;
+  }
+    /* Reference */
+  .reference-img img{
+    height: 80%;
+    width: 80%;
+  }
 }

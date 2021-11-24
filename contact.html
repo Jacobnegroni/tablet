@@ -12,8 +12,11 @@
     <title> ABOUT </title>
   </head>
 
-  <body>
-    <header>
+  <body class = "site">
+    <header id="header">
+      <div class = "skip">
+        <a href="#main">Skip to content</a>
+      </div>
       <nav>
         <ul>
           <li><a href = "index.html">Home</a></li>
@@ -27,42 +30,58 @@
     </header>
   
     <main>
+      <h1>Invisible</h1>
       <div class="fcf-body">
-
+        
         <div id="fcf-form">
-        <h3 class="fcf-h3">Contact</h3>
-    
-        <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+          <h3 class="fcf-h3">CONTACT</h3>
+          
+          <div class="form-wrapper">
+              <div class="left-side">
+
+
+                <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+                    
+                    <div class="fcf-form-group">
+                        <label for="Name" class="fcf-label">First & Last Name</label>
+                        <div class="fcf-input-group">
+                            <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                        </div>
+                    </div>
             
-            <div class="fcf-form-group">
-                <label for="Name" class="fcf-label">First & Last Name</label>
-                <div class="fcf-input-group">
-                    <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-                </div>
+                    <div class="fcf-form-group">
+                        <label for="Email" class="fcf-label">Email Address</label>
+                        <div class="fcf-input-group">
+                            <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                        </div>
+                    </div>
+            
+                    <div class="fcf-form-group">
+                        <label for="Message" class="fcf-label">Your Message</label>
+                        <div class="fcf-input-group">
+                            <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                        </div>
+                    </div>
+            
+                    <div class="fcf-form-group">
+                        <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                    </div>
+                </form>
             </div>
     
-            <div class="fcf-form-group">
-                <label for="Email" class="fcf-label">Email Address</label>
-                <div class="fcf-input-group">
-                    <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-                </div>
+            <div class="right-side">
+              <h1>Hey! I can be reached at...</h1>
+              <p>  jnegroni@umich.edu  <br>
+                1619 S University Ave   <br>
+                   Ann Arbor, MI   <br>
+               </p>
             </div>
-    
-            <div class="fcf-form-group">
-                <label for="Message" class="fcf-label">Your Message</label>
-                <div class="fcf-input-group">
-                    <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-                </div>
-            </div>
-    
-            <div class="fcf-form-group">
-                <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
-            </div>
-        </form>
+          </div>
         </div>
       </div>
     </main>
-  
+
+
   <footer>
     <p> Copyright © 2021 <br>
         Negroni Inc </p>
